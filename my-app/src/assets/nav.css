@@ -1,0 +1,16 @@
+.Nav-Bar{
+    background-color: blue;    
+    display: flex;
+    height: 150px;
+}
+.Nav-Bar ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.Nav-Bar ul li{
+    text-decoration: none;
+    font-weight: bold;
+}
