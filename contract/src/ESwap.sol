@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract LaySwap is Ownable {
+contract ESwap is Ownable {
     IERC20 public  tokenA;
     IERC20 public  tokenB;
 
