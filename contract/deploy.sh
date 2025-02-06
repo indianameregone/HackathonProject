@@ -1,0 +1,1 @@
+forge create src/$1.sol:$1 --rpc-url https://rpc.ankr.com/electroneum_testnet  --private-key <PRIVATE_KEY> > deployment-output.txt
