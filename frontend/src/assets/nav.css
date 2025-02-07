@@ -1,7 +1,7 @@
 .Nav-Bar{
-    background-color: blue;    
+    background-color: var(--nueve);    
     display: flex;
-    height: 150px;
+    height: 100px;
 }
 .Nav-Bar ul{
     display: flex;
@@ -11,6 +11,10 @@
     
 }
 .Nav-Bar ul li{
+    font-family: "Lato", sans-serif;
     text-decoration: none;
     font-weight: bold;
+}
+.conn{
+    background-color: var(--nueve);
 }

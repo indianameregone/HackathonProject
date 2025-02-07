@@ -1,47 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: o;
-  text-align: center;
-}
+*{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto; 
+  --uno: #effef0;
+  --dos: #d9ffdc;
+  --tres: #b6fcbd;
+  --cuatro: #7ef78c;
+  --cinco: #3eea52;
+  --seis: #0bae1e;
+  --siete: #0d881c;
+  --ocho: #106b1c;
+  --nueve: #0f581a;
+  --diez: #023109;
+  --once: #013230;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--dos);
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: rgb(41, 77, 65);
+  background-color: var(--siete);
   width: 1250px;
   height: 100vh;
-  color: aliceblue;
+  color: var(--uno);  
 }
 
 .read-the-docs {
   color: #888;
+}
+.walletBTN{
+  position: absolute;
+  top: 15px;
+  border: 2px solid red;
 }
