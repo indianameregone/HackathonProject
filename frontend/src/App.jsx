@@ -1,15 +1,33 @@
 import './App.css'
 import './index.css'
 import Nav from './assets/banner'
-import { AppKitProvider, ConnectButton } from './assets/config'
-
+import { AppKitProvider } from './assets/config'
+import BTCcard from './assets/btcCard'
+import datas from './datas'
+   
+  
 function App() {
-  return (      
+  console.log(datas)
+  return (   
+    
     <div className="card">
+      
         <Nav />
-      <AppKitProvider>
-        <h1>Hackathon App</h1>     
-      </AppKitProvider>
+        <AppKitProvider />
+        <section className='advBanner'>
+          {datas.map((data)=>{
+            return( 
+              <BTCcard 
+              name={data.name} 
+              id={data.id} 
+              price_btc={data.price_btc} 
+              price_usd={data.price_usd} 
+              key={data.id}/>                
+              
+            )
+          })}  
+        </section>
+                   
     </div>
   )
 }

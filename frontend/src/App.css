@@ -18,6 +18,7 @@
   --once: #013230;
 
 }
+
 body{
   width: 100%;
   display: flex;
@@ -37,8 +38,13 @@ body{
 .read-the-docs {
   color: #888;
 }
-.walletBTN{
-  position: absolute;
-  top: 15px;
-  border: 2px solid red;
+.advBanner{
+  width: 100%;
+  height: 460px;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 3px;
+  row-gap: 3px;
+  
+  
 }

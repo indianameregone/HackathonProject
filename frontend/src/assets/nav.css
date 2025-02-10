@@ -14,7 +14,15 @@
     font-family: "Lato", sans-serif;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.5em;
 }
-.conn{
-    background-color: var(--nueve);
+.container{
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    border: var(--nueve) 2px solid;
+    border-radius: 5px;
+    
+    
+    
 }
