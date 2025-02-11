@@ -12,7 +12,7 @@ function nav() {
           <ul>
             <li>Home</li>
             <li>Staking</li>
-            <li>Swap</li>
+            <li>Swap</li> 
               <ConnectButton />            
           </ul>
         </div>  
