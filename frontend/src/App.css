@@ -45,6 +45,9 @@ body{
   grid-template-columns: auto auto auto auto auto auto;
   column-gap: 3px;
   row-gap: 3px;
+  animation: fadeIn 3s ease;
   
-  
+}
+@keyframes fadeIn {
+  0%{ opacity: 0;}
 }
