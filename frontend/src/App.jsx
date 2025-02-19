@@ -2,32 +2,27 @@ import './App.css'
 import './index.css'
 import Nav from './assets/banner'
 import { AppKitProvider } from './assets/config'
-import BTCcard from './assets/btcCard'
-import datas from './datas'
+import useFetch from './useFetch'
+import { useState,useEffect } from 'react'
+
    
   
-function App() {
-  console.log(datas)
+function App() {  
+  const {data, loading} = useFetch("https://api.coinlore.net/api/tickers/")    
   return (   
     
     <div className="card">
-      
-        <Nav />
-        <AppKitProvider />
-        <section className='advBanner'>
-          {datas.map((data)=>{
-            return( 
-              <BTCcard 
-              name={data.name} 
-              id={data.id} 
-              price_btc={data.price_btc} 
-              price_usd={data.price_usd} 
-              key={data.id}/>                
-              
-            )
-          })}  
-        </section>
-                   
+      <AppKitProvider />
+      <Nav />
+      <div className='advBanner'>
+        {loading && <h2>Loading....</h2>}
+        {data?.map((user)=>(
+          <div key={user.id} className="container">
+            <h2 >{user.name}</h2> 
+            <p>Price USD: {user.price_usd}</p>
+          </div>         
+          ))}
+      </div>
     </div>
   )
 }
