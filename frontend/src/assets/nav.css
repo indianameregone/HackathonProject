@@ -1,7 +1,7 @@
 .Nav-Bar{
     background-color: var(--nueve);    
     display: flex;
-    height: 100px;
+    height: 250px;
 }
 .Nav-Bar ul{
     display: flex;
