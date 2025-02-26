@@ -1,29 +1,20 @@
 import './App.css'
 import './index.css'
-import Nav from './assets/banner'
-import { AppKitProvider } from './assets/config'
-import useFetch from './useFetch'
-import { useState,useEffect } from 'react'
+import Home from './components/home'
+import Staking from './components/staking'
+import Swap from './components/swap'
+import { Route,Routes } from 'react-router-dom'
 
    
   
 function App() {  
-  const {data, loading} = useFetch("https://api.coinlore.net/api/tickers/")    
-  return (   
-    
-    <div className="card">
-      <AppKitProvider />
-      <Nav />
-      <div className='advBanner'>
-        {loading && <h2>Loading....</h2>}
-        {data?.map((user)=>(
-          <div key={user.id} className="container">
-            <h2 >{user.name}</h2> 
-            <p>Price USD: {user.price_usd}</p>
-          </div>         
-          ))}
-      </div>
-    </div>
+   
+  return (    
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/Staking' element={<Staking />} />
+      <Route path='/Swap' element={<Swap />} />
+    </Routes>
   )
 }
 
