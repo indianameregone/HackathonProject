@@ -4,6 +4,8 @@ import useFetch from '../useFetch'
 import '../App.css'
 import '../index.css'
 import Footer from '../assets/footer'
+import { ConnectButton } from '../assets/config'
+import { Link } from 'react-router-dom'
 
 function home() {  
     const {data, loading} = useFetch("https://api.coinlore.net/api/tickers/")    
@@ -11,7 +13,14 @@ function home() {
       
       <div className="card">
         <AppKitProvider />
-        <Nav />
+        <div className="Nav-Bar">
+          <ul>
+            <li><Link style={{ textDecoration: 'none',color: "whitesmoke" ,fontSize:'25px',textShadow:'3px 3px rgb(12, 19, 231)'}} to="/">Home</Link></li>
+            <li><Link style={{ textDecoration: 'none',color: "whitesmoke" }} to="/Staking">Staking</Link></li>
+            <li><Link style={{ textDecoration: 'none',color:'whitesmoke'}} to="/Swap">Swap</Link></li> 
+              <ConnectButton />            
+          </ul>
+        </div> 
         <div className='advBanner'>
           {loading && <h2>Loading....</h2>}
           {data?.map((user)=>(
