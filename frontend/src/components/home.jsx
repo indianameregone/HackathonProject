@@ -3,6 +3,7 @@ import { AppKitProvider } from '../assets/config'
 import useFetch from '../useFetch'
 import '../App.css'
 import '../index.css'
+import Footer from '../assets/footer'
 
 function home() {  
     const {data, loading} = useFetch("https://api.coinlore.net/api/tickers/")    
@@ -20,6 +21,7 @@ function home() {
             </div>         
             ))}
         </div>
+        <Footer />
       </div>
     )
   }

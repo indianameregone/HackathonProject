@@ -1,6 +1,7 @@
 import Nav from '../assets/banner'
 import { AppKitProvider } from '../assets/config'
 import useFetch from '../useFetch'
+import Footer from '../assets/footer'
 import '../App.css'
 import '../index.css'
 
@@ -12,6 +13,7 @@ function stacking() {
         <AppKitProvider />
         <Nav />
         <h1>Staking</h1>
+        <Footer />
       </div>
     )
   }
