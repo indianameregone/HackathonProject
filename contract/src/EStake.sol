@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 
-contract LayStaking {
+contract EStake {
     address immutable public owner;
     IERC20 public rewardToken;
      IERC20 public poolToken;

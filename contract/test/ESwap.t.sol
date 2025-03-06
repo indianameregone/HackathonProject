@@ -14,7 +14,7 @@ contract MockERC20 is ERC20 {
 }
 
 contract EStakeTest is Test {
-    LayStaking public staking;
+    EStake public staking;
     MockERC20 public rewardToken;
     MockERC20 public poolToken;
     address public owner = address(1);
@@ -33,7 +33,7 @@ contract EStakeTest is Test {
         poolToken.transfer(user, stakingFundAmount);
 
         vm.prank(owner);
-        staking = new LayStaking(address(rewardToken), stakingDuration, stakingFundAmount, owner);
+        staking = new EStake(address(rewardToken), stakingDuration, stakingFundAmount, owner);
     }
 
     function testSetPoolToken() public {
