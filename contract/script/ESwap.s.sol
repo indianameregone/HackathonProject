@@ -22,7 +22,7 @@ contract DeployESwap is Script {
     function run() external {
         // Define deployment parameters
         address owner = msg.sender;  // Or specify another owner address
-        address tokenA = 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707;  // EToken address
+        address tokenA = 0x5FbDB2315678afecb367f032d93F642f64180aa3;  // EToken address
         address tokenB;
         uint256 rateAtoB = 1;  // Define your initial exchange rate A to B
         uint256 rateBtoA = 1;  // Define your initial exchange rate B to A
