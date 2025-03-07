@@ -85,19 +85,25 @@
   font-weight: bold;  
 }
 .enviroment{
-  width: 300px;
-  height: 80px;
+  width: 60px;
+  height: 50px;
   border: var(--nueve) 2px solid;
-  border-radius: 5px;
+  border-radius: 25px;
   margin: 5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--nueve);
+  overflow: hidden;
 }
 .enviroment button{
-  width: 80px;
+  width: 50px;
   height: 50px;
   color: var(--uno);
   background-color: var(--ocho);
   font-size: large;
+  border-radius: 50%;
+}
+#realID{
+  visibility: hidden;
 }

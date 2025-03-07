@@ -43,10 +43,14 @@ function swap() {
       document.getElementsByClassName('swapbtn')[0].style.setProperty('--nueve','grey') 
       document.getElementsByClassName('enviroment')[0].style.setProperty('--nueve','grey') 
       document.getElementsByClassName('enviroment')[0].children[0].style.setProperty('--ocho','grey') 
-      document.getElementsByClassName('enviroment')[0].children[1].style.setProperty('--ocho','grey') 
-      document.getElementsByClassName('enviroment')[0].children[2].style.setProperty('--ocho','grey') 
+      document.getElementsByClassName('enviroment')[0].children[1].style.setProperty('--ocho','grey')       
       document.getElementsByClassName('Foot-Nav')[0].style.setProperty('--ocho','grey') 
-      document.getElementsByClassName('Nav-Bar')[0].style.setProperty('--nueve','grey') 
+      document.getElementsByClassName('Nav-Bar')[0].style.setProperty('--nueve','grey')
+      document.getElementById('realID').style.visibility = 'visible'
+      document.getElementById('testID').style.visibility = 'hidden'
+      
+      
+      
       
       
       
@@ -59,10 +63,11 @@ function swap() {
       document.getElementsByClassName('swapbtn')[0].style.setProperty('--nueve','#0f581a')    
       document.getElementsByClassName('enviroment')[0].style.setProperty('--nueve','#0f581a')  
       document.getElementsByClassName('enviroment')[0].children[0].style.setProperty('--ocho','#106b1c') 
-      document.getElementsByClassName('enviroment')[0].children[1].style.setProperty('--ocho','#106b1c')  
-      document.getElementsByClassName('enviroment')[0].children[2].style.setProperty('--ocho','#106b1c')  
+      document.getElementsByClassName('enviroment')[0].children[1].style.setProperty('--ocho','#106b1c')        
       document.getElementsByClassName('Foot-Nav')[0].style.setProperty('--ocho','#106b1c') 
       document.getElementsByClassName('Nav-Bar')[0].style.setProperty('--nueve','#0f581a') 
+      document.getElementById('realID').style.visibility = 'hidden'
+      document.getElementById('testID').style.visibility = 'visible'
     }
    
     return (   
@@ -80,6 +85,10 @@ function swap() {
         <section id='swap-sect'>
           <div className='imgByS'>          
           </div>
+          <fieldset className='enviroment'>            
+            <button onClick={testEnv} id='testID'>Test</button>
+            <button onClick={realEnv} id='realID'>Real</button>
+          </fieldset>
           <section>          
             <fieldset className='main-sect'>
             <legend>I want to sell:</legend>
@@ -109,11 +118,6 @@ function swap() {
             </fieldset>       
           </section>
           <button className='swapbtn'>Swap Currency</button>
-          <fieldset className='enviroment'>
-            <legend>Select mode</legend>
-            <button onClick={testEnv}>Test</button>
-            <button onClick={realEnv}>go real</button>
-          </fieldset>
         </section>
         
         <Footer />
