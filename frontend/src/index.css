@@ -49,7 +49,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 700px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,10 +57,17 @@
 }
 .Foot-Nav{
   width: 100%;
-  height: 300px;
+  height: 200px;
   background-color: var(--ocho);
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+.Foot-Nav img{
+  width: 50px;
+}
+
 .imgByS{
   position: relative;
   background-image: url('./img/buysell.png');
@@ -76,4 +83,21 @@
   color: var(--uno);
   font-size: 18px;
   font-weight: bold;  
+}
+.enviroment{
+  width: 300px;
+  height: 80px;
+  border: var(--nueve) 2px solid;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.enviroment button{
+  width: 80px;
+  height: 50px;
+  color: var(--uno);
+  background-color: var(--ocho);
+  font-size: large;
 }

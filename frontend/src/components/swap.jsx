@@ -35,7 +35,35 @@ function swap() {
       setSellopt(option)
       
     }
-    
+    const testEnv = ()=>{
+      document.getElementsByClassName('card')[0].style.setProperty('--uno','grey') 
+      document.getElementsByClassName('card')[0].style.setProperty('--siete','grey') 
+      document.getElementsByClassName('main-sect')[0].style.setProperty('--nueve','grey') 
+      document.getElementsByClassName('main-sect')[1].style.setProperty('--nueve','grey') 
+      document.getElementsByClassName('swapbtn')[0].style.setProperty('--nueve','grey') 
+      document.getElementsByClassName('enviroment')[0].style.setProperty('--nueve','grey') 
+      document.getElementsByClassName('enviroment')[0].children[0].style.setProperty('--ocho','grey') 
+      document.getElementsByClassName('enviroment')[0].children[1].style.setProperty('--ocho','grey') 
+      document.getElementsByClassName('enviroment')[0].children[2].style.setProperty('--ocho','grey') 
+      document.getElementsByClassName('Foot-Nav')[0].style.setProperty('--ocho','grey') 
+      document.getElementsByClassName('Nav-Bar')[0].style.setProperty('--nueve','grey') 
+      
+      
+      
+    }
+    const realEnv = ()=>{
+      document.getElementsByClassName('card')[0].style.setProperty('--uno','#effef0')   
+      document.getElementsByClassName('card')[0].style.setProperty('--siete','#0d881c')   
+      document.getElementsByClassName('main-sect')[0].style.setProperty('--nueve','#0f581a') 
+      document.getElementsByClassName('main-sect')[1].style.setProperty('--nueve','#0f581a') 
+      document.getElementsByClassName('swapbtn')[0].style.setProperty('--nueve','#0f581a')    
+      document.getElementsByClassName('enviroment')[0].style.setProperty('--nueve','#0f581a')  
+      document.getElementsByClassName('enviroment')[0].children[0].style.setProperty('--ocho','#106b1c') 
+      document.getElementsByClassName('enviroment')[0].children[1].style.setProperty('--ocho','#106b1c')  
+      document.getElementsByClassName('enviroment')[0].children[2].style.setProperty('--ocho','#106b1c')  
+      document.getElementsByClassName('Foot-Nav')[0].style.setProperty('--ocho','#106b1c') 
+      document.getElementsByClassName('Nav-Bar')[0].style.setProperty('--nueve','#0f581a') 
+    }
    
     return (   
       
@@ -81,6 +109,11 @@ function swap() {
             </fieldset>       
           </section>
           <button className='swapbtn'>Swap Currency</button>
+          <fieldset className='enviroment'>
+            <legend>Select mode</legend>
+            <button onClick={testEnv}>Test</button>
+            <button onClick={realEnv}>go real</button>
+          </fieldset>
         </section>
         
         <Footer />
