@@ -1,0 +1,21 @@
+No files changed, compilation skipped
+Script ran successfully.
+
+## Setting up 1 EVM.
+
+==========================
+
+Chain 52014
+
+Estimated gas price: 1.000000014 gwei
+
+Estimated total gas used for script: 803613
+
+Estimated amount required: 0.000803613011250582 ETH
+
+==========================
+
+Transactions saved to: /home/luisca/blockchain/HackathonProject/contract/broadcast/EToken.s.sol/52014/run-latest.json
+
+Sensitive values saved to: /home/luisca/blockchain/HackathonProject/contract/cache/EToken.s.sol/52014/run-latest.json
+
